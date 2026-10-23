@@ -7,6 +7,19 @@ from zscore_kama import signals
 from zscore_kama.indicator import divergences, oscillator
 
 
+@pytest.mark.parametrize(
+    "base_unit,higher_unit", [("ns", "us"), ("ms", "ns"), ("s", "us")]
+)
+def test_timestamp_storage_resolution_does_not_change_signals(
+    bars, higher, base_unit, higher_unit
+):
+    expected = signals(bars, higher)
+    bars.index = bars.index.as_unit(base_unit)
+    higher.end = higher.end.dt.as_unit(higher_unit)
+    expected.index = bars.index
+    assert_frame_equal(signals(bars, higher), expected)
+
+
 def test_future_prices_cannot_change_past_signals(bars, higher):
     cutoff = bars.index[500]
     expected = signals(bars, higher).loc[:cutoff]

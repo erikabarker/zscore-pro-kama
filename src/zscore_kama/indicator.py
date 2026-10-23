@@ -112,10 +112,14 @@ def signals(
     zscore, baseline, length = oscillator(bars, bar_seconds)
     higher_z, _, _ = oscillator(higher, higher_seconds)
     available = pd.DataFrame(
-        {"available": higher.end, "htf_z": higher_z, "htf_previous": higher_z.shift(1)}
+        {
+            "available": higher.end.dt.as_unit("ns"),
+            "htf_z": higher_z,
+            "htf_previous": higher_z.shift(1),
+        }
     )
     merged = pd.merge_asof(
-        pd.DataFrame({"available": bars.index}),
+        pd.DataFrame({"available": pd.DatetimeIndex(bars.index).as_unit("ns")}),
         available.reset_index(drop=True),
         on="available",
     )
