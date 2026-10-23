@@ -1,0 +1,22 @@
+Z-Score Probability Pro KAMA
+Copyright 2026 Erika Barker. Code is distributed under MPL-2.0.
+
+The earlier HMA indicator explicitly credits SteverSteves's original work:
+https://github.com/erikabarker/Z-score-Probability-Indicator-with-Hull-Moving-Average-for-Trading-View
+https://www.tradingview.com/script/2AEm2NC1-HMA-Z-Score-Probability-Indicator-by-Erika-Barker/
+
+This repository records that lineage; it does not claim invention of Z-scores,
+Kaufman's Adaptive Moving Average, Hull's Moving Average, ALMA, divergence,
+or variance-ratio methods. The KAMA publication is:
+https://www.tradingview.com/script/PggSrcTj-Z-Score-Probability-Pro-KAMA/
+
+The Pine source is preserved from the author's saved implementation. Its existing
+comments and UI terminology are not independently validated statistical claims.
+See docs/methodology.md for interpretation, including the uncalibrated nature
+of Probability, Hurst and sigma terminology.
+
+The chart screenshot is an actual TradingView interface capture provided with
+this project. TradingView and data-provider marks belong to their owners.
+The screenshot is illustrative and is not licensed as reusable market data.
+No endorsement, affiliation or adoption by TradingView or any financial firm
+is asserted. Third-party dependencies retain their respective licenses.
