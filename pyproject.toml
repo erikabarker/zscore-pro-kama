@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zscore-kama"
+version = "0.1.0"
+description = "KAMA residual Z-score signals and an explicit next-open research ledger"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MPL-2.0"
+authors = [{name = "Erika Barker"}]
+keywords = ["kama", "z-score", "quantitative-finance", "technical-analysis", "backtesting"]
+dependencies = ["numpy>=2.0,<2.4", "pandas>=2.2,<3"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Intended Audience :: Science/Research",
+]
+
+[project.urls]
+Homepage = "https://erikabarker.ai/data-analysis/z-score-indicator-lessons/"
+Repository = "https://github.com/erikabarker/zscore-pro-kama"
+Issues = "https://github.com/erikabarker/zscore-pro-kama/issues"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "mypy>=1.15,<2", "pandas-stubs>=2.2,<3"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.mypy]
+files = ["src"]
+check_untyped_defs = true
+disallow_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "/src", "/tests", "/examples", "/docs", "/pine", "/.github",
+  "/README.md", "/LICENSE", "/NOTICE", "/AGENTS.md", "/CONTRIBUTING.md",
+  "/CITATION.cff", "/justfile", "/pyproject.toml", "/uv.lock", "/.gitignore",
+]
