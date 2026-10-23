@@ -1,0 +1,2267 @@
+{
+  "source_sha256": "6b620234239cea418404ed6e9c9724d698d974f21c0e31b1885d32d1fd834435",
+  "code_sha256": {
+    "daily_edge.py": "0d0d5f7a3f815789c8ac000df354e9d551e2e3ad916e1f410a0a617382a2de8a",
+    "research.py": "ff0845ef9c9a19547ecad3d0f110a20b5742df0eebc3ec8c448a31481a60001f",
+    "indicator.pine": "bd618af18f81c5538bb442bff239d707efa9cc499bbd08f6ea22b34fc37f2f85"
+  },
+  "spy_buy_hold": 0.14074996001906115,
+  "coverage": {
+    "QQQ": {
+      "bars": 6949,
+      "first": "1999-03-10 09:30:00-05:00",
+      "last": "2026-10-22 09:30:00-04:00",
+      "completed_trades": 66,
+      "missing_feature_trades": 1,
+      "open_entry": "2026-10-22 09:30:00-04:00",
+      "pending_buy": false
+    },
+    "JPM": {
+      "bars": 11746,
+      "first": "1980-03-17 09:30:00-05:00",
+      "last": "2026-10-22 09:30:00-04:00",
+      "completed_trades": 75,
+      "missing_feature_trades": 2,
+      "open_entry": null,
+      "pending_buy": false
+    }
+  },
+  "folds": [
+    {
+      "year": 2010,
+      "train": 65,
+      "test": 3,
+      "last_training_exit": "2009-12-28 09:30:00-05:00",
+      "first_test_entry": "2010-08-17 09:30:00-04:00"
+    },
+    {
+      "year": 2011,
+      "train": 68,
+      "test": 4,
+      "last_training_exit": "2010-12-20 09:30:00-05:00",
+      "first_test_entry": "2011-01-26 09:30:00-05:00"
+    },
+    {
+      "year": 2012,
+      "train": 72,
+      "test": 3,
+      "last_training_exit": "2011-12-13 09:30:00-05:00",
+      "first_test_entry": "2012-02-23 09:30:00-05:00"
+    },
+    {
+      "year": 2013,
+      "train": 75,
+      "test": 4,
+      "last_training_exit": "2012-12-05 09:30:00-05:00",
+      "first_test_entry": "2013-04-25 09:30:00-04:00"
+    },
+    {
+      "year": 2014,
+      "train": 79,
+      "test": 4,
+      "last_training_exit": "2013-07-12 09:30:00-04:00",
+      "first_test_entry": "2014-01-31 09:30:00-05:00"
+    },
+    {
+      "year": 2015,
+      "train": 83,
+      "test": 6,
+      "last_training_exit": "2014-10-22 09:30:00-04:00",
+      "first_test_entry": "2015-07-08 09:30:00-04:00"
+    },
+    {
+      "year": 2016,
+      "train": 89,
+      "test": 5,
+      "last_training_exit": "2015-12-31 09:30:00-05:00",
+      "first_test_entry": "2016-01-15 09:30:00-05:00"
+    },
+    {
+      "year": 2017,
+      "train": 94,
+      "test": 4,
+      "last_training_exit": "2016-11-22 09:30:00-05:00",
+      "first_test_entry": "2017-05-23 09:30:00-04:00"
+    },
+    {
+      "year": 2018,
+      "train": 98,
+      "test": 4,
+      "last_training_exit": "2017-12-22 09:30:00-05:00",
+      "first_test_entry": "2018-02-12 09:30:00-05:00"
+    },
+    {
+      "year": 2019,
+      "train": 101,
+      "test": 4,
+      "last_training_exit": "2018-11-16 09:30:00-05:00",
+      "first_test_entry": "2019-03-13 09:30:00-04:00"
+    },
+    {
+      "year": 2020,
+      "train": 106,
+      "test": 5,
+      "last_training_exit": "2019-12-11 09:30:00-05:00",
+      "first_test_entry": "2020-01-31 09:30:00-05:00"
+    },
+    {
+      "year": 2021,
+      "train": 111,
+      "test": 6,
+      "last_training_exit": "2020-11-20 09:30:00-05:00",
+      "first_test_entry": "2021-03-02 09:30:00-05:00"
+    },
+    {
+      "year": 2022,
+      "train": 116,
+      "test": 1,
+      "last_training_exit": "2021-12-27 09:30:00-05:00",
+      "first_test_entry": "2022-05-18 09:30:00-04:00"
+    },
+    {
+      "year": 2023,
+      "train": 118,
+      "test": 2,
+      "last_training_exit": "2022-06-02 09:30:00-04:00",
+      "first_test_entry": "2023-03-17 09:30:00-04:00"
+    },
+    {
+      "year": 2024,
+      "train": 120,
+      "test": 8,
+      "last_training_exit": "2023-12-29 09:30:00-05:00",
+      "first_test_entry": "2024-01-03 09:30:00-05:00"
+    },
+    {
+      "year": 2025,
+      "train": 128,
+      "test": 5,
+      "last_training_exit": "2024-10-01 09:30:00-04:00",
+      "first_test_entry": "2025-01-08 09:30:00-05:00"
+    },
+    {
+      "year": 2026,
+      "train": 133,
+      "test": 5,
+      "last_training_exit": "2025-12-15 09:30:00-05:00",
+      "first_test_entry": "2026-01-22 09:30:00-05:00"
+    }
+  ],
+  "baseline": [
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": 0,
+      "trades": 66,
+      "win_rate": 0.6818181818181818,
+      "mean_net": 0.012940844788615532,
+      "profit_factor": 2.105199256501058,
+      "mean_net_95": [
+        0.0012299515098196975,
+        0.025394492365270877
+      ],
+      "win_rate_95": [
+        0.5641025641025641,
+        0.8135593220338984
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": 2,
+      "trades": 66,
+      "win_rate": 0.6818181818181818,
+      "mean_net": 0.012535749469763893,
+      "profit_factor": 2.059512073569661,
+      "mean_net_95": [
+        0.0008295396115954554,
+        0.024984416583481158
+      ],
+      "win_rate_95": [
+        0.5641025641025641,
+        0.8135593220338984
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": 5,
+      "trades": 66,
+      "win_rate": 0.6818181818181818,
+      "mean_net": 0.011928410161140766,
+      "profit_factor": 1.9927617950324799,
+      "mean_net_95": [
+        0.00022922192310334828,
+        0.024369610313931353
+      ],
+      "win_rate_95": [
+        0.5641025641025641,
+        0.8135593220338984
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": 10,
+      "trades": 66,
+      "win_rate": 0.6818181818181818,
+      "mean_net": 0.010916986956870153,
+      "profit_factor": 1.8860188526335127,
+      "mean_net_95": [
+        -0.0007705079337562617,
+        0.023345752120784925
+      ],
+      "win_rate_95": [
+        0.5641025641025641,
+        0.8135593220338984
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": 25,
+      "trades": 66,
+      "win_rate": 0.6363636363636364,
+      "mean_net": 0.007888770749769642,
+      "profit_factor": 1.594093114257977,
+      "mean_net_95": [
+        -0.0037637140837454325,
+        0.02028030537093044
+      ],
+      "win_rate_95": [
+        0.5184865900383142,
+        0.7692307692307693
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "QQQ",
+      "slippage_bps": null,
+      "trades": 66,
+      "win_rate": 0.6818181818181818,
+      "mean_net": 0.00946464410764417,
+      "profit_factor": 1.7360708456982885,
+      "mean_net_95": [
+        -0.0023222834436184706,
+        0.02203343560205342
+      ],
+      "win_rate_95": [
+        0.5641025641025641,
+        0.8135593220338984
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": 0,
+      "trades": 75,
+      "win_rate": 0.6533333333333333,
+      "mean_net": 0.010218053573629413,
+      "profit_factor": 1.7025496203461241,
+      "mean_net_95": [
+        -0.0009588091740327212,
+        0.022967971881470355
+      ],
+      "win_rate_95": [
+        0.5512820512820513,
+        0.7586425141859446
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": 2,
+      "trades": 75,
+      "win_rate": 0.6266666666666667,
+      "mean_net": 0.00981404715348403,
+      "profit_factor": 1.668572387278326,
+      "mean_net_95": [
+        -0.0013583457430492826,
+        0.022558866513791315
+      ],
+      "win_rate_95": [
+        0.524390243902439,
+        0.7361111111111112
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": 5,
+      "trades": 75,
+      "win_rate": 0.6266666666666667,
+      "mean_net": 0.009208340376654373,
+      "profit_factor": 1.618248532980194,
+      "mean_net_95": [
+        -0.0019573510938986627,
+        0.02194551513796072
+      ],
+      "win_rate_95": [
+        0.524390243902439,
+        0.7361111111111112
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": 10,
+      "trades": 75,
+      "win_rate": 0.6266666666666667,
+      "mean_net": 0.008199635884171712,
+      "profit_factor": 1.5375930007351584,
+      "mean_net_95": [
+        -0.002954895469389196,
+        0.020924079829759187
+      ],
+      "win_rate_95": [
+        0.524390243902439,
+        0.7361111111111112
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": 25,
+      "trades": 75,
+      "win_rate": 0.56,
+      "mean_net": 0.005179559540843329,
+      "profit_factor": 1.3157471867186346,
+      "mean_net_95": [
+        -0.005941558255458902,
+        0.017865887233682553
+      ],
+      "win_rate_95": [
+        0.45454545454545453,
+        0.6857142857142857
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "JPM",
+      "slippage_bps": null,
+      "trades": 75,
+      "win_rate": 0.6266666666666667,
+      "mean_net": 0.006469573499300344,
+      "profit_factor": 1.408492069178626,
+      "mean_net_95": [
+        -0.0045674628959259085,
+        0.01897170221041934
+      ],
+      "win_rate_95": [
+        0.524390243902439,
+        0.7361111111111112
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": 0,
+      "trades": 141,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.011492551589154831,
+      "profit_factor": 1.869518980422945,
+      "mean_net_95": [
+        0.004186138038230552,
+        0.019325960590024567
+      ],
+      "win_rate_95": [
+        0.5954198473282443,
+        0.7426649531494012
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": 2,
+      "trades": 141,
+      "win_rate": 0.6524822695035462,
+      "mean_net": 0.01108803547174269,
+      "profit_factor": 1.8307981808613853,
+      "mean_net_95": [
+        0.003784543901842582,
+        0.018918311735559485
+      ],
+      "win_rate_95": [
+        0.5755395683453237,
+        0.7333333333333333
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": 5,
+      "trades": 141,
+      "win_rate": 0.6524822695035462,
+      "mean_net": 0.010481564531094813,
+      "profit_factor": 1.773736374294508,
+      "mean_net_95": [
+        0.0031824537423403893,
+        0.018307144037710794
+      ],
+      "win_rate_95": [
+        0.5755395683453237,
+        0.7333333333333333
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": 10,
+      "trades": 141,
+      "win_rate": 0.6524822695035462,
+      "mean_net": 0.009471587450115662,
+      "profit_factor": 1.682366869981732,
+      "mean_net_95": [
+        0.0021797721280643733,
+        0.017289345284150482
+      ],
+      "win_rate_95": [
+        0.5755395683453237,
+        0.7333333333333333
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": 25,
+      "trades": 141,
+      "win_rate": 0.5957446808510638,
+      "mean_net": 0.00644770095778756,
+      "profit_factor": 1.431539663282251,
+      "mean_net_95": [
+        -0.0008222716277954591,
+        0.014242040587081886
+      ],
+      "win_rate_95": [
+        0.5205459424817752,
+        0.6764761167624944
+      ]
+    },
+    {
+      "sample": "full_history",
+      "symbol": "pooled",
+      "slippage_bps": null,
+      "trades": 141,
+      "win_rate": 0.6524822695035462,
+      "mean_net": 0.007871521443631497,
+      "profit_factor": 1.5450021751124703,
+      "mean_net_95": [
+        0.00040417420476147057,
+        0.015760719393063564
+      ],
+      "win_rate_95": [
+        0.5755395683453237,
+        0.7333333333333333
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": 0,
+      "trades": 43,
+      "win_rate": 0.6976744186046512,
+      "mean_net": 0.009784724778214154,
+      "profit_factor": 1.936133470128346,
+      "mean_net_95": [
+        -0.0016028572920440676,
+        0.02193008687048116
+      ],
+      "win_rate_95": [
+        0.5681818181818182,
+        0.8461538461538461
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": 2,
+      "trades": 43,
+      "win_rate": 0.6976744186046512,
+      "mean_net": 0.009380891654927587,
+      "profit_factor": 1.8875854377888934,
+      "mean_net_95": [
+        -0.002002136293326953,
+        0.02152139657379234
+      ],
+      "win_rate_95": [
+        0.5681818181818182,
+        0.8461538461538461
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": 5,
+      "trades": 43,
+      "win_rate": 0.6976744186046512,
+      "mean_net": 0.008775444693478431,
+      "profit_factor": 1.8167761007678371,
+      "mean_net_95": [
+        -0.0026007554856550875,
+        0.020908667493299407
+      ],
+      "win_rate_95": [
+        0.5681818181818182,
+        0.8461538461538461
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": 10,
+      "trades": 43,
+      "win_rate": 0.6976744186046512,
+      "mean_net": 0.007767172880555496,
+      "profit_factor": 1.7038390619732935,
+      "mean_net_95": [
+        -0.0035976567779739533,
+        0.019888268515095692
+      ],
+      "win_rate_95": [
+        0.5681818181818182,
+        0.8461538461538461
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": 25,
+      "trades": 43,
+      "win_rate": 0.6511627906976745,
+      "mean_net": 0.004748391986302936,
+      "profit_factor": 1.398021277955947,
+      "mean_net_95": [
+        -0.006582394163405381,
+        0.01683317870653873
+      ],
+      "win_rate_95": [
+        0.5128205128205128,
+        0.8055555555555556
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "QQQ",
+      "slippage_bps": null,
+      "trades": 43,
+      "win_rate": 0.6976744186046512,
+      "mean_net": 0.00693978220715446,
+      "profit_factor": 1.6138517898406337,
+      "mean_net_95": [
+        -0.004965521432263349,
+        0.01946366729145635
+      ],
+      "win_rate_95": [
+        0.5681818181818182,
+        0.8461538461538461
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": 0,
+      "trades": 30,
+      "win_rate": 0.6333333333333333,
+      "mean_net": 0.006240863522930237,
+      "profit_factor": 1.4764136834664137,
+      "mean_net_95": [
+        -0.008383872834990737,
+        0.021644607409114645
+      ],
+      "win_rate_95": [
+        0.47058823529411764,
+        0.8148148148148148
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": 2,
+      "trades": 30,
+      "win_rate": 0.6333333333333333,
+      "mean_net": 0.005838447660693524,
+      "profit_factor": 1.4409346781578087,
+      "mean_net_95": [
+        -0.008780439972429221,
+        0.0212360312813765
+      ],
+      "win_rate_95": [
+        0.47058823529411764,
+        0.8148148148148148
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": 5,
+      "trades": 30,
+      "win_rate": 0.6333333333333333,
+      "mean_net": 0.005235125528404672,
+      "profit_factor": 1.3891400319685878,
+      "mean_net_95": [
+        -0.009374993401872199,
+        0.020623473368725803
+      ],
+      "win_rate_95": [
+        0.47058823529411764,
+        0.8148148148148148
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": 10,
+      "trades": 30,
+      "win_rate": 0.6333333333333333,
+      "mean_net": 0.004230392267140296,
+      "profit_factor": 1.306414705033415,
+      "mean_net_95": [
+        -0.01036512383831729,
+        0.01960335944226336
+      ],
+      "win_rate_95": [
+        0.47058823529411764,
+        0.8148148148148148
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": 25,
+      "trades": 30,
+      "win_rate": 0.5666666666666667,
+      "mean_net": 0.001222205849499236,
+      "profit_factor": 1.0817617256958227,
+      "mean_net_95": [
+        -0.013329589179953319,
+        0.01654912308288468
+      ],
+      "win_rate_95": [
+        0.41935483870967744,
+        0.7407407407407407
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "JPM",
+      "slippage_bps": null,
+      "trades": 30,
+      "win_rate": 0.6333333333333333,
+      "mean_net": 0.003256228364273624,
+      "profit_factor": 1.2289945122532846,
+      "mean_net_95": [
+        -0.011493955373917489,
+        0.018711678853732486
+      ],
+      "win_rate_95": [
+        0.47058823529411764,
+        0.8148148148148148
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": 0,
+      "trades": 73,
+      "win_rate": 0.6712328767123288,
+      "mean_net": 0.008328343440426243,
+      "profit_factor": 1.721678090745393,
+      "mean_net_95": [
+        -0.00017677789432378222,
+        0.01610949617681618
+      ],
+      "win_rate_95": [
+        0.5737644648023144,
+        0.7733396226415093
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": 2,
+      "trades": 73,
+      "win_rate": 0.6712328767123288,
+      "mean_net": 0.00792509275318756,
+      "profit_factor": 1.6792677124533608,
+      "mean_net_95": [
+        -0.0005766272133022165,
+        0.015703133650850666
+      ],
+      "win_rate_95": [
+        0.5737644648023144,
+        0.7733396226415093
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": 5,
+      "trades": 73,
+      "win_rate": 0.6712328767123288,
+      "mean_net": 0.007320519009201544,
+      "profit_factor": 1.617384187058525,
+      "mean_net_95": [
+        -0.0011761014546491767,
+        0.01509389448148715
+      ],
+      "win_rate_95": [
+        0.5737644648023144,
+        0.7733396226415093
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": 10,
+      "trades": 73,
+      "win_rate": 0.6712328767123288,
+      "mean_net": 0.006313701395590346,
+      "profit_factor": 1.5186189148692717,
+      "mean_net_95": [
+        -0.0021744266897396228,
+        0.014079307373266205
+      ],
+      "win_rate_95": [
+        0.5737644648023144,
+        0.7733396226415093
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": 25,
+      "trades": 73,
+      "win_rate": 0.6164383561643836,
+      "mean_net": 0.0032992743958356625,
+      "profit_factor": 1.2505062033618966,
+      "mean_net_95": [
+        -0.005163427381135077,
+        0.011041618390398222
+      ],
+      "win_rate_95": [
+        0.525,
+        0.7142857142857143
+      ]
+    },
+    {
+      "sample": "annual_test",
+      "symbol": "pooled",
+      "slippage_bps": null,
+      "trades": 73,
+      "win_rate": 0.6712328767123288,
+      "mean_net": 0.005425992956655486,
+      "profit_factor": 1.4339755165169423,
+      "mean_net_95": [
+        -0.003552242342112934,
+        0.013501159877633343
+      ],
+      "win_rate_95": [
+        0.5737644648023144,
+        0.7733396226415093
+      ]
+    }
+  ],
+  "models": [
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": 0,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.7142857142857143,
+      "mean_net": 0.011203798456123551,
+      "profit_factor": 2.177483684152656,
+      "delta_per_opportunity": 0.0011585202254414072,
+      "delta_95": [
+        0.0,
+        0.003558312120998608
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": 2,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.7142857142857143,
+      "mean_net": 0.010799397816869014,
+      "profit_factor": 2.121957936683069,
+      "delta_per_opportunity": 0.0011673573755026129,
+      "delta_95": [
+        0.0,
+        0.0035854547961865968
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": 5,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.7142857142857143,
+      "mean_net": 0.010193100006892167,
+      "profit_factor": 2.0410580988115017,
+      "delta_per_opportunity": 0.00118060647604415,
+      "delta_95": [
+        0.0,
+        0.0036261484621356033
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 1,
+        "observed_sum": 0.428110200289471,
+        "random_sum_95": [
+          0.35291546557008857,
+          0.428110200289471
+        ],
+        "fraction_random_at_least_as_good": 0.2471505698860228
+      }
+    },
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": 10,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.7142857142857143,
+      "mean_net": 0.009183411246421115,
+      "profit_factor": 1.9122399139557409,
+      "delta_per_opportunity": 0.0012026706624604768,
+      "delta_95": [
+        0.0,
+        0.0036939170347000355
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": 25,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.006160387990008295,
+      "profit_factor": 1.564391151202377,
+      "delta_per_opportunity": 0.0012687311667284214,
+      "delta_95": [
+        0.0,
+        0.00389681715495158
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "QQQ",
+      "slippage_bps": null,
+      "base_opportunities": 43,
+      "trades": 42,
+      "win_rate": 0.7142857142857143,
+      "mean_net": 0.008358299262482997,
+      "profit_factor": 1.8098188984275523,
+      "delta_per_opportunity": 0.001224138002712653,
+      "delta_95": [
+        0.0,
+        0.003759852436903149
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": 0,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "mean_net": 0.004836771027382562,
+      "profit_factor": 1.3569207631305156,
+      "delta_per_opportunity": -0.0015653181964604265,
+      "delta_95": [
+        -0.0045444721832722055,
+        0.0
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": 2,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "mean_net": 0.004434916689839128,
+      "profit_factor": 1.3237718404569894,
+      "delta_per_opportunity": -0.0015513615271823674,
+      "delta_95": [
+        -0.004503952820852034,
+        0.0
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": 5,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "mean_net": 0.0038324364236571444,
+      "profit_factor": 1.2753788061400806,
+      "delta_per_opportunity": -0.001530436985536099,
+      "delta_95": [
+        -0.004443204151556416,
+        0.0
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 1,
+        "observed_sum": 0.11114065628605718,
+        "random_sum_95": [
+          0.11114065628605718,
+          0.19883643578221022
+        ],
+        "fraction_random_at_least_as_good": 1.0
+      }
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": 10,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "mean_net": 0.002829105151204105,
+      "profit_factor": 1.198086462629788,
+      "delta_per_opportunity": -0.001495590620976328,
+      "delta_95": [
+        -0.004342037286705468,
+        0.0
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": 25,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.5517241379310345,
+      "mean_net": -0.00017488369095842765,
+      "profit_factor": 0.9886908036300224,
+      "delta_per_opportunity": -0.0013912600840923829,
+      "delta_95": [
+        -0.004039142179623046,
+        0.0
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "JPM",
+      "slippage_bps": null,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6206896551724138,
+      "mean_net": 0.0018860188334123324,
+      "profit_factor": 1.1282132733716619,
+      "delta_per_opportunity": -0.0014330768253083695,
+      "delta_95": [
+        -0.004160545621863009,
+        0.0
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": 0,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.676056338028169,
+      "mean_net": 0.008603181619032162,
+      "profit_factor": 1.7706399197875724,
+      "delta_per_opportunity": 3.913457260503723e-05,
+      "delta_95": [
+        -0.001956647745575533,
+        0.0018453591968063034
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": 2,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.676056338028169,
+      "mean_net": 0.008199821018504694,
+      "profit_factor": 1.7263695953316793,
+      "delta_per_opportunity": 5.007563467316892e-05,
+      "delta_95": [
+        -0.0019392019089779593,
+        0.0018596723910307366
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": 5,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.676056338028169,
+      "mean_net": 0.00759508248697927,
+      "profit_factor": 1.6618053283495027,
+      "delta_per_opportunity": 6.647902607966412e-05,
+      "delta_95": [
+        -0.0019130462319201236,
+        0.0018936465022483338
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 2,
+        "observed_sum": 0.5392508565755282,
+        "random_sum_95": [
+          0.46405612185614575,
+          0.6269466360716812
+        ],
+        "fraction_random_at_least_as_good": 0.4405118976204759
+      }
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": 10,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.676056338028169,
+      "mean_net": 0.00658799044696628,
+      "profit_factor": 1.5588432076749557,
+      "delta_per_opportunity": 9.379616241795415e-05,
+      "delta_95": [
+        -0.0018694882762204101,
+        0.0019393064432175187
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": 25,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.6197183098591549,
+      "mean_net": 0.0035727418104585067,
+      "profit_factor": 1.2797095602031523,
+      "delta_per_opportunity": 0.00017558407735000875,
+      "delta_95": [
+        -0.0017390751051154785,
+        0.0020458290063495796
+      ]
+    },
+    {
+      "model": "logistic",
+      "symbol": "pooled",
+      "slippage_bps": null,
+      "base_opportunities": 73,
+      "trades": 71,
+      "win_rate": 0.676056338028169,
+      "mean_net": 0.005714691763285119,
+      "profit_factor": 1.471750121594649,
+      "delta_per_opportunity": 0.00013213190900538346,
+      "delta_95": [
+        -0.001791346031635462,
+        0.001973922529374153
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": 0,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.7368421052631579,
+      "mean_net": 0.011428892302315743,
+      "profit_factor": 2.339161762887169,
+      "delta_per_opportunity": 0.0003152265587160365,
+      "delta_95": [
+        -0.0027971560558389605,
+        0.0034682041691883707
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": 2,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.7368421052631579,
+      "mean_net": 0.011024401643526626,
+      "profit_factor": 2.2765350593774274,
+      "delta_per_opportunity": 0.00036160282074710687,
+      "delta_95": [
+        -0.0027475622636902244,
+        0.003513070592146938
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": 5,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.7368421052631579,
+      "mean_net": 0.010417968871728835,
+      "profit_factor": 2.1853607844857517,
+      "delta_per_opportunity": 0.00043113244897960873,
+      "delta_95": [
+        -0.0026732087522228338,
+        0.003600548428276824
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 4,
+        "observed_sum": 0.39588281712569573,
+        "random_sum_95": [
+          0.25398434329688724,
+          0.6489091222387596
+        ],
+        "fraction_random_at_least_as_good": 0.46290741851629674
+      }
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": 10,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.7368421052631579,
+      "mean_net": 0.00940805535465887,
+      "profit_factor": 2.0403572012900293,
+      "delta_per_opportunity": 0.0005469225491430399,
+      "delta_95": [
+        -0.002540189288483669,
+        0.0037567576576245294
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": 25,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.6842105263157895,
+      "mean_net": 0.006384359173625964,
+      "profit_factor": 1.6495304065997822,
+      "delta_per_opportunity": 0.0008935998415525673,
+      "delta_95": [
+        -0.002168288237342386,
+        0.004149171020077678
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "QQQ",
+      "slippage_bps": null,
+      "base_opportunities": 43,
+      "trades": 38,
+      "win_rate": 0.7368421052631579,
+      "mean_net": 0.00866840478131238,
+      "profit_factor": 1.9392013530292178,
+      "delta_per_opportunity": 0.0007206685298192729,
+      "delta_95": [
+        -0.0024208617028211154,
+        0.00396838451339716
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": 0,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6551724137931034,
+      "mean_net": 0.007863788928950623,
+      "profit_factor": 1.647563184025104,
+      "delta_per_opportunity": 0.0013607991083886995,
+      "delta_95": [
+        0.0,
+        0.0039507070888704175
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": 2,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6551724137931034,
+      "mean_net": 0.007460724026359571,
+      "profit_factor": 1.6077136456398455,
+      "delta_per_opportunity": 0.001373585564787394,
+      "delta_95": [
+        0.0,
+        0.003987829059060176
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": 5,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6551724137931034,
+      "mean_net": 0.006856428820076215,
+      "profit_factor": 1.5495615309601216,
+      "delta_per_opportunity": 0.001392755664335669,
+      "delta_95": [
+        0.0,
+        0.004043484186780974
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 1,
+        "observed_sum": 0.19883643578221022,
+        "random_sum_95": [
+          0.11114065628605718,
+          0.19883643578221022
+        ],
+        "fraction_random_at_least_as_good": 0.2561487702459508
+      }
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": 10,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6551724137931034,
+      "mean_net": 0.005850075064956847,
+      "profit_factor": 1.4567385960428154,
+      "delta_per_opportunity": 0.0014246802956513224,
+      "delta_95": [
+        0.0,
+        0.004136168600278033
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": 25,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.5862068965517241,
+      "mean_net": 0.002837036864467155,
+      "profit_factor": 1.2042332319257714,
+      "delta_per_opportunity": 0.00152026311948568,
+      "delta_95": [
+        0.0,
+        0.004413667121087458
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "JPM",
+      "slippage_bps": null,
+      "base_opportunities": 30,
+      "trades": 29,
+      "win_rate": 0.6551724137931034,
+      "mean_net": 0.004879283028485236,
+      "profit_factor": 1.3696638978035973,
+      "delta_per_opportunity": 0.0014604118965954372,
+      "delta_95": [
+        0.0,
+        0.004239905506244817
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": 0,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.7014925373134329,
+      "mean_net": 0.009885787857127855,
+      "profit_factor": 1.979120762837433,
+      "delta_per_opportunity": 0.0007449139078965829,
+      "delta_95": [
+        -0.0013863476420982834,
+        0.002684123534825292
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": 2,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.7014925373134329,
+      "mean_net": 0.009481914316693124,
+      "profit_factor": 1.9285126842086238,
+      "delta_per_opportunity": 0.000777486140215718,
+      "delta_95": [
+        -0.0013447644841209337,
+        0.0027159944916121566
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": 5,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.7014925373134329,
+      "mean_net": 0.008876406759819492,
+      "profit_factor": 1.8547446457686918,
+      "delta_per_opportunity": 0.0008263200717286746,
+      "delta_95": [
+        -0.0012794645355528817,
+        0.002765763574715205
+      ],
+      "random_filter": {
+        "informative_symbol_year_groups": 5,
+        "observed_sum": 0.594719252907906,
+        "random_sum_95": [
+          0.3843504214377207,
+          0.8149841334045665
+        ],
+        "fraction_random_at_least_as_good": 0.3297340531893621
+      }
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": 10,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.7014925373134329,
+      "mean_net": 0.007868034035235606,
+      "profit_factor": 1.73720135663746,
+      "delta_per_opportunity": 0.0009076449107217861,
+      "delta_95": [
+        -0.001219362755106358,
+        0.0028655218903146933
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": 25,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.6417910447761194,
+      "mean_net": 0.004848951009960211,
+      "profit_factor": 1.418469073383841,
+      "delta_per_opportunity": 0.0011511326954976823,
+      "delta_95": [
+        -0.0009974622228880198,
+        0.0031668716203372416
+      ]
+    },
+    {
+      "model": "boosting",
+      "symbol": "pooled",
+      "slippage_bps": null,
+      "base_opportunities": 73,
+      "trades": 67,
+      "win_rate": 0.7014925373134329,
+      "mean_net": 0.007028337156954363,
+      "profit_factor": 1.6419877829824947,
+      "delta_per_opportunity": 0.0010246726531519432,
+      "delta_95": [
+        -0.0011265108037745767,
+        0.0030264170763160863
+      ]
+    }
+  ],
+  "benchmarks": [
+    {
+      "symbol": "QQQ",
+      "model": "base",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.10172699313934232,
+      "strategy_cagr": 0.020023770641848015,
+      "strategy_open_mark_drawdown": -0.2730398329029442,
+      "buy_hold_cagr": 0.18667795753239225,
+      "exposure_scaled_buy_hold_cagr": 0.01951917491091626
+    },
+    {
+      "symbol": "QQQ",
+      "model": "logistic",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.099361249112846,
+      "strategy_cagr": 0.023191039268714686,
+      "strategy_open_mark_drawdown": -0.2730398329029442,
+      "buy_hold_cagr": 0.18667795753239225,
+      "exposure_scaled_buy_hold_cagr": 0.019065930083815186
+    },
+    {
+      "symbol": "QQQ",
+      "model": "boosting",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.08989827300686065,
+      "strategy_cagr": 0.021555917648791834,
+      "strategy_open_mark_drawdown": -0.2648321752320377,
+      "buy_hold_cagr": 0.18667795753239225,
+      "exposure_scaled_buy_hold_cagr": 0.01725259330861406
+    },
+    {
+      "symbol": "JPM",
+      "model": "base",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.07073574639224035,
+      "strategy_cagr": 0.007824432993599695,
+      "strategy_open_mark_drawdown": -0.17947963677179046,
+      "buy_hold_cagr": 0.1601507530745616,
+      "exposure_scaled_buy_hold_cagr": 0.013009955874047519
+    },
+    {
+      "symbol": "JPM",
+      "model": "logistic",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.06837000236574403,
+      "strategy_cagr": 0.005135866785457965,
+      "strategy_open_mark_drawdown": -0.17947963677179046,
+      "buy_hold_cagr": 0.1601507530745616,
+      "exposure_scaled_buy_hold_cagr": 0.012578117580407167
+    },
+    {
+      "symbol": "JPM",
+      "model": "boosting",
+      "start": "2010-01-01 00:00:00-05:00",
+      "end": "2026-10-22 09:30:00-04:00",
+      "exposure": 0.06837000236574403,
+      "strategy_cagr": 0.010387329439199844,
+      "strategy_open_mark_drawdown": -0.17947963677179046,
+      "buy_hold_cagr": 0.1601507530745616,
+      "exposure_scaled_buy_hold_cagr": 0.012578117580407167
+    }
+  ],
+  "annual": [
+    {
+      "symbol": "JPM",
+      "year": 2010,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.024252253005848823,
+      "profit_factor": 0.12374618280323796
+    },
+    {
+      "symbol": "JPM",
+      "year": 2010,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.024252253005848823,
+      "profit_factor": 0.12374618280323796
+    },
+    {
+      "symbol": "JPM",
+      "year": 2010,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.024252253005848823,
+      "profit_factor": 0.12374618280323796
+    },
+    {
+      "symbol": "JPM",
+      "year": 2011,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 0.0,
+      "mean_net": -0.0442786663014163,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "JPM",
+      "year": 2011,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 0.0,
+      "mean_net": -0.0442786663014163,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "JPM",
+      "year": 2011,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 0.0,
+      "mean_net": -0.0442786663014163,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "JPM",
+      "year": 2012,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.026683154859681424,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2012,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.026683154859681424,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2012,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.026683154859681424,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2013,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.011845847276912513,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2013,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.011845847276912513,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2013,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.011845847276912513,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2014,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.040979334137830836,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2014,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.040979334137830836,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2014,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.040979334137830836,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2015,
+      "model": "base",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.007034340393110683,
+      "profit_factor": 0.3026454297423629
+    },
+    {
+      "symbol": "JPM",
+      "year": 2015,
+      "model": "logistic",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.007034340393110683,
+      "profit_factor": 0.3026454297423629
+    },
+    {
+      "symbol": "JPM",
+      "year": 2015,
+      "model": "boosting",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.007034340393110683,
+      "profit_factor": 0.3026454297423629
+    },
+    {
+      "symbol": "JPM",
+      "year": 2016,
+      "model": "base",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": 0.0032458433142965593,
+      "profit_factor": 1.2907273623772955
+    },
+    {
+      "symbol": "JPM",
+      "year": 2016,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.010976578769632242,
+      "profit_factor": 0.262628040400327
+    },
+    {
+      "symbol": "JPM",
+      "year": 2016,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.018255347729085436,
+      "profit_factor": 20.04526083451858
+    },
+    {
+      "symbol": "JPM",
+      "year": 2017,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.019695299414162815,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2017,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.019695299414162815,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2017,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.019695299414162815,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2018,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.06748605640916217,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2018,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.06748605640916217,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2018,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.06748605640916217,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2019,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.03400700172859672,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2019,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.03400700172859672,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2019,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.03400700172859672,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2021,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": 0.024351981636365705,
+      "profit_factor": 3.546779930117853
+    },
+    {
+      "symbol": "JPM",
+      "year": 2021,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": 0.024351981636365705,
+      "profit_factor": 3.546779930117853
+    },
+    {
+      "symbol": "JPM",
+      "year": 2021,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": 0.024351981636365705,
+      "profit_factor": 3.546779930117853
+    },
+    {
+      "symbol": "JPM",
+      "year": 2024,
+      "model": "base",
+      "trades": 4,
+      "win_rate": 1.0,
+      "mean_net": 0.03459036773539015,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2024,
+      "model": "logistic",
+      "trades": 4,
+      "win_rate": 1.0,
+      "mean_net": 0.03459036773539015,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2024,
+      "model": "boosting",
+      "trades": 4,
+      "win_rate": 1.0,
+      "mean_net": 0.03459036773539015,
+      "profit_factor": null
+    },
+    {
+      "symbol": "JPM",
+      "year": 2025,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.0534454904127874,
+      "profit_factor": 0.15211624687546302
+    },
+    {
+      "symbol": "JPM",
+      "year": 2025,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.0534454904127874,
+      "profit_factor": 0.15211624687546302
+    },
+    {
+      "symbol": "JPM",
+      "year": 2025,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_net": -0.0534454904127874,
+      "profit_factor": 0.15211624687546302
+    },
+    {
+      "symbol": "JPM",
+      "year": 2026,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": 0.0005717635690605979,
+      "profit_factor": 1.058181935654554
+    },
+    {
+      "symbol": "JPM",
+      "year": 2026,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": 0.0005717635690605979,
+      "profit_factor": 1.058181935654554
+    },
+    {
+      "symbol": "JPM",
+      "year": 2026,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": 0.0005717635690605979,
+      "profit_factor": 1.058181935654554
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2010,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_net": -0.01334301592725462,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2010,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_net": -0.01334301592725462,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2010,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_net": -0.01334301592725462,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2011,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.02852152047381351,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2011,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.02852152047381351,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2011,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.02852152047381351,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2012,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.0257068081358669,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2012,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.0257068081358669,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2012,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.0257068081358669,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2013,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.02763434229631086,
+      "profit_factor": 10.592831272917076
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2013,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.02763434229631086,
+      "profit_factor": 10.592831272917076
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2013,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.02763434229631086,
+      "profit_factor": 10.592831272917076
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2014,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.023056038968899555,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2014,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.023056038968899555,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2014,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.011898749495958927,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2015,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.025315801189397358,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2015,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.025315801189397358,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2015,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.025315801189397358,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2016,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.021872176684941014,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2016,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.021872176684941014,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2016,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.021872176684941014,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2017,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.023247762619030016,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2017,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.023247762619030016,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2017,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.023247762619030016,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2018,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.011360108887872053,
+      "profit_factor": 0.6529020723557138
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2018,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.011360108887872053,
+      "profit_factor": 0.6529020723557138
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2018,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_net": -0.031554979657408055,
+      "profit_factor": 0.0
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2019,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.007522820561448411,
+      "profit_factor": 0.40273209669150456
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2019,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.007522820561448411,
+      "profit_factor": 0.40273209669150456
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2019,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 0.3333333333333333,
+      "mean_net": -0.007522820561448411,
+      "profit_factor": 0.40273209669150456
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2020,
+      "model": "base",
+      "trades": 5,
+      "win_rate": 0.4,
+      "mean_net": -0.029436277042055536,
+      "profit_factor": 0.3139752445811247
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2020,
+      "model": "logistic",
+      "trades": 5,
+      "win_rate": 0.4,
+      "mean_net": -0.029436277042055536,
+      "profit_factor": 0.3139752445811247
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2020,
+      "model": "boosting",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.03414087436637006,
+      "profit_factor": 0.33032322627932115
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2021,
+      "model": "base",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.0012200372883293675,
+      "profit_factor": 0.7962254278682078
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2021,
+      "model": "logistic",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.0012200372883293675,
+      "profit_factor": 0.7962254278682078
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2021,
+      "model": "boosting",
+      "trades": 4,
+      "win_rate": 0.5,
+      "mean_net": -0.0012200372883293675,
+      "profit_factor": 0.7962254278682078
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2022,
+      "model": "base",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.008957244570148903,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2022,
+      "model": "logistic",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.008957244570148903,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2022,
+      "model": "boosting",
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_net": 0.008957244570148903,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2023,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.022790696216652084,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2023,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.022790696216652084,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2023,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.022790696216652084,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2024,
+      "model": "base",
+      "trades": 4,
+      "win_rate": 0.75,
+      "mean_net": 0.001966912021116596,
+      "profit_factor": 1.1549784486334014
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2024,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.01954457551812161,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2024,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 1.0,
+      "mean_net": 0.01954457551812161,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2025,
+      "model": "base",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.009418639203094936,
+      "profit_factor": 2.912149654769441
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2025,
+      "model": "logistic",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.009418639203094936,
+      "profit_factor": 2.912149654769441
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2025,
+      "model": "boosting",
+      "trades": 3,
+      "win_rate": 0.6666666666666666,
+      "mean_net": 0.009418639203094936,
+      "profit_factor": 2.912149654769441
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2026,
+      "model": "base",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.06583359898061425,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2026,
+      "model": "logistic",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.06583359898061425,
+      "profit_factor": null
+    },
+    {
+      "symbol": "QQQ",
+      "year": 2026,
+      "model": "boosting",
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_net": 0.06583359898061425,
+      "profit_factor": null
+    }
+  ]
+}
